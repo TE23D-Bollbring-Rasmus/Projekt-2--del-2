@@ -1,0 +1,28 @@
+header{
+    border: solid black 3px;
+    width: 500px;
+    height: 60px;
+    background-color: lightblue;
+}
+body {
+background-image:url(https://www.google.com/imgres?q%3Dfootball%20background%26imgurl%3Dhttps%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fsoccer-football-stadium-background-creative-ai-design-instagram-facebook-wall-painting-wallpaper-art-backgrounds-image-photo-324140125.jpg%26imgrefurl%3Dhttps%3A%2F%2Fwww.dreamstime.com%2Fsoccer-football-stadium-background-creative-ai-design-instagram-facebook-wall-painting-wallpaper-art-backgrounds-image-photo-image324140125%26docid%3D679zlWdRXUOjOM%26tbnid%3Ds_3j-DSQBMVhUM%26vet%3D12ahUKEwjiwN6C59SLAxV6KhAIHZQFDDUQM3oECBkQAA..i%26w%3D800%26h%3D400%26hcb%3D2%26ved%3D2ahUKEwjiwN6C59SLAxV6KhAIHZQFDDUQM3oECBkQAA) ;
+width: 600px;
+height: 1200px;
+}
+h1{
+text-align: center;
+}
+
+.contact button {
+    background-color: #ddd;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 60%;
+}
