@@ -2,11 +2,17 @@ header{
     justify-content: center;
     border: solid black 1px;
     width: 50%;
-    height: 60px;
+    height: 70px;
     background-color: lightblue;
+    margin: auto;
 }
 body {
-background-image:url(https://www.google.com/imgres?q%3Dfootball%20background%26imgurl%3Dhttps%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fsoccer-football-stadium-background-creative-ai-design-instagram-facebook-wall-painting-wallpaper-art-backgrounds-image-photo-324140125.jpg%26imgrefurl%3Dhttps%3A%2F%2Fwww.dreamstime.com%2Fsoccer-football-stadium-background-creative-ai-design-instagram-facebook-wall-painting-wallpaper-art-backgrounds-image-photo-image324140125%26docid%3D679zlWdRXUOjOM%26tbnid%3Ds_3j-DSQBMVhUM%26vet%3D12ahUKEwjiwN6C59SLAxV6KhAIHZQFDDUQM3oECBkQAA..i%26w%3D800%26h%3D400%26hcb%3D2%26ved%3D2ahUKEwjiwN6C59SLAxV6KhAIHZQFDDUQM3oECBkQAA) ;
+background-image: url(bilder/bakgrund.avif);
+background-size: cover;
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 h1{
 text-align: center;
@@ -23,13 +29,28 @@ text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    width: 1100px;
-    height: 900px;
+    width: 1000px;
+    height: 800px;
     margin: auto;
     margin-top: 20px;
 }
-.box {
-    background-color: lightblue;
-    padding: 20px;
-    border: 1px solid #000;
+
+.box img{
+    border: solid black 1px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.länkarcontainer{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin: auto;
+    width: 100px;
+    height: 60px;
+}
+.länk{
+    border: solid black 1px;
 }
