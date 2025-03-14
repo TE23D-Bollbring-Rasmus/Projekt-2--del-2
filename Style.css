@@ -1,4 +1,6 @@
 header{
+    display: flex;
+    align-items: center;
     justify-content: center;
     border: solid black 1px;
     width: 50%;
@@ -7,6 +9,9 @@ header{
     margin: auto;
 }
 body {
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
 background-image: url(bilder/bakgrund.avif);
 background-size: cover;
     background-position: center; 
@@ -29,28 +34,35 @@ text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    width: 1000px;
-    height: 800px;
+    min-width: 1025px;
+    max-height: 800px;
     margin: auto;
     margin-top: 20px;
 }
 
 .box img{
     border: solid black 1px;
-    width: 100%;
+    width: 80%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+    margin-left: 45px;
 }
 
 .länkarcontainer{
     display: flex;
     flex-direction: row;
-    gap: 100px;
-    margin: auto;
-    width: 100px;
-    height: 60px;
+    gap: 830px;
+    margin-top: 20px;
+    width: auto;
+    position: relative;
 }
 .länk{
+    background-color: lightblue;
     border: solid black 1px;
+}
+.länkarcontainer .länk:nth-child(2) { /* Targetar den mittersta länken */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
