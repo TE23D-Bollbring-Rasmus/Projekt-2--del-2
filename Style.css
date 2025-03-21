@@ -1,6 +1,7 @@
-*{
+* {
     margin: 0;
 }
+
 .top {
     width: 100%;
     background-color: rgb(247, 224, 109);
@@ -9,7 +10,8 @@
     border-bottom: solid 1px black; 
     border-radius: 2px;
 }
-header{
+
+header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,65 +21,58 @@ header{
     margin: auto;
 }
 
-.länkarcontainer{
+.länkarcontainer {
     margin-top: 20px;
-    width: auto;
+    width: 10%;
+    display: flex;
+    flex-direction: column; /* Detta gör att länkarna staplas vertikalt */
+    align-items: center; /* Centrerar länkarna horisontellt */
 }
-.länk{
+
+.länk {
     border-radius: 3px;
     background-color: skyblue;
+    padding: 10px;
+    margin: 5px 0; /* Lägg till lite avstånd mellan länkarna */
+    width: 100%; /* Gör länkarna lika breda */
+    text-align: center;
 }
-.länk2{
-    border-radius: 3px;
-    background-color: skyblue;
+
+.länk1 { /* Historia */
+    order: 3; /* Gör så att Historia är tredje */
 }
-.länkarcontainer .länk:nth-child(2) {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+
+.länk2 { /* Länk */
+    order: 4;
 }
-.länkarcontainer .länk:nth-child(3) {
-    position: absolute;
-    left: 85%;
-    transform: translateX(-15%);
+
+.länk3 { /* Länk */
+    order: 5;
 }
-.länkarcontainer .länk:nth-child(1) {
-    position: absolute;
-    left: 15%;
-    transform: translateX(-85%);
+
+.länk4 { /* Varukorg */
+    order: 2; /* Gör så att Varukorg är andra */
 }
-.länkarcontainer .länk2:nth-child(1) {
-    position: absolute;
-    left: 15%;
-    transform: translateX(-85%);
-}
-.länkarcontainer .länk2:nth-child() {
-    position: absolute;
-    left: 40%;
-    transform: translateX(-85%);
+
+.länk5 { /* Kontakta oss */
+    order: 1; /* Gör så att Kontakta oss är första */
 }
 
 body {
-    align-items: center;
-    justify-content: center;
-background-image: url(bilder/bakgrund.webp);
-background-size: cover;
-background-repeat: no-repeat;
+    background-image: url(bilder/bakgrund.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center; 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     height: 100%;
-}
-h1{
-text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.contact button {
-    background-color: #ddd;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+h1 {
+    text-align: center;
 }
 
 .container {
@@ -90,7 +85,7 @@ text-align: center;
     margin-top: 20px;
 }
 
-.box img{
+.box img {
     border: solid black 1px;
     width: 80%;
     height: 100%;
@@ -99,13 +94,14 @@ text-align: center;
     border-radius: 20px;
 }
 
-.box{
+.box {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     max-height: 100%;
 }
+
 .box2 {
     overflow: hidden;
     height: auto;
