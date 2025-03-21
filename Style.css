@@ -22,40 +22,51 @@ header {
 }
 
 .länkarcontainer {
-    margin-top: 20px;
-    width: 10%;
     display: flex;
-    flex-direction: column; /* Detta gör att länkarna staplas vertikalt */
-    align-items: center; /* Centrerar länkarna horisontellt */
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
 }
 
-.länk {
-    border-radius: 3px;
-    background-color: skyblue;
-    padding: 10px;
-    margin: 5px 0; /* Lägg till lite avstånd mellan länkarna */
-    width: 100%; /* Gör länkarna lika breda */
+.länkar-left, .länkar-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: -80px;
+    gap: 70px;
     text-align: center;
 }
 
-.länk1 { /* Historia */
-    order: 3; /* Gör så att Historia är tredje */
+.länk-mitten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
 }
 
-.länk2 { /* Länk */
-    order: 4;
+.länk {
+    border-radius: 8px;
+    background-color: skyblue;
+    padding: 10px;
+    margin: 5px;
 }
 
-.länk3 { /* Länk */
-    order: 5;
+.länk a {
+    text-decoration: none;
+    color: black;
 }
 
-.länk4 { /* Varukorg */
-    order: 2; /* Gör så att Varukorg är andra */
+.länkar-left .historia, .länkar-left .kontakta {
+    margin-bottom: 10px;
 }
 
-.länk5 { /* Kontakta oss */
-    order: 1; /* Gör så att Kontakta oss är första */
+
+
+.länk-mitten {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
